@@ -103,20 +103,7 @@ $("#predict-button").click(async function () {
 	
 $("#prediction-list").empty();
 top5.forEach(function (p) {
-
-	$("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
-
-	
-	});
-	
-	
+    const probabilityPercentage = (p.probability * 100).toFixed(2); // Multiply by 100 and round to 2 decimal places
+    $("#prediction-list").append(`<li>${p.className}: ${probabilityPercentage}%</li>`);
+});	
 });
-
-
-
-
-
-
-
-
-
