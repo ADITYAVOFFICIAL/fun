@@ -79,7 +79,7 @@
                 </ul>
 
                 <div class="navbar-button">
-                    <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#signup-modal">Download APK</button>
+                    <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#signup-modal"><b>Download APK</b></button>
                 </div>
             </div>
             <!-- nav links -->
@@ -231,7 +231,7 @@
             </div>
             <div class="col-xl-10 w3-content">
                 <div class="w3-center w3-padding-bottom">
-                    <img id="selected-image" class="adjust-image" src="https://cdn.vectorstock.com/i/preview-1x/66/14/default-avatar-photo-placeholder-profile-picture-vector-21806614.jpg" alt="Image for analysis" style="border-radius: 30px; max-width: 70%;">
+                    <img id="selected-image" class="adjust-image" src="./images/nope.png" alt="Image for analysis" style="border-radius: 30px; max-width: 70%;">
                 </div>                
                 <div id="btnn" class="w3-center" style="padding-top: 10px;">
                     <button class="btn btn-primary has-icon" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)" style="margin-bottom: 12px;">
@@ -411,17 +411,17 @@
                     <input type="hidden" name="additional-data" value="Website ▶ DermaScan">
                     <div class="form-group mb-30">
                         <label class="text-black-200 h5 font-weight-600 mb-2" for="fname">Your Name</label>
-                        <input class="form-control shadow-none" type="text" placeholder="Type your name here ..." id="fname" name="name" required>
+                        <input class="form-control shadow-none" type="text" placeholder="Type your name here ..." id="fname" name="name" required style="border-radius: 15px;">
                         <p class="font-weight-bold invalid-feedback">Your name is required!</p>
                     </div>
                     <div class="form-group mb-30">
                         <label class="text-black-200 h5 font-weight-600 mb-2" for="email">Working Mail</label>
-                        <input class="form-control shadow-none" type="email" placeholder="Type your email here ..." id="email" name="email" required pattern="^\S+@\S+\.\S+$">
+                        <input class="form-control shadow-none" type="email" placeholder="Type your email here ..." id="email" name="email" required pattern="^\S+@\S+\.\S+$" style="border-radius: 15px;">
                         <p class="font-weight-bold invalid-feedback">Please enter a valid email address.</p>
                     </div>                    
                     <div class="form-group mb-30">
                         <label class="text-black-200 h5 font-weight-600 mb-2" for="company-website">Occupation</label>
-                        <select class="form-control shadow-none" name="Occupation">
+                        <select class="form-control shadow-none" name="Occupation" style="border-radius: 15px;">
                             <option value="">Select your occupation</option>
                             <option value="Student">Student</option>
                             <option value="Professor">Professor</option>
@@ -438,19 +438,19 @@
                     </div>
                     <div class="form-group mb-30">
                         <label class="text-black-200 h5 font-weight-600 mb-2" for="subject">Subject</label>
-                        <input class="form-control shadow-none" type="text" placeholder="Type your subject here ..." id="subject" name="subject" required>
+                        <input class="form-control shadow-none" type="text" placeholder="Type your subject here ..." id="subject" name="subject" required style="border-radius: 15px;">
                         <p class="font-weight-bold invalid-feedback">Your subject is required!</p>
                     </div>                    
                     <div class="form-group mb-30">
                         <label class="text-black-200 h5 font-weight-600 mb-2" for="message">Anything else?</label>
-                        <textarea class="form-control shadow-none" name="comment" rows="5" id="message" required></textarea>
+                        <textarea class="form-control shadow-none" name="comment" rows="5" id="message" required style="border-radius: 15px;"></textarea>
                         <p class="font-weight-bold invalid-feedback">Tell us something!</p>
                     </div>
-                    <button class="btn btn-primary w-100" type="submit">Submit Now</button>
+                    <button class="btn btn-primary w-100" type="submit" style="border-radius: 15px;"><b>Submit Now</b></button>
                 </form>                
             </div>
             <div class="col-xl-4 col-lg-5 mt-5 mt-lg-0">
-                <div class="rounded shadow p-30 mb-30">
+                <div class="shadow p-30 mb-30" style="border-radius: 15px;">
                     <h3 class="font-weight-600">
                         <i class="ti-location-pin text-primary mr-2"></i>
                         Our All Address
@@ -471,7 +471,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="rounded shadow p-30">
+                <div class="shadow p-30" style="border-radius: 15px;">
                     <h3 class="font-weight-600">
                         <i class="ti-info-alt text-primary mr-2"></i>
                         With Gossas you can
