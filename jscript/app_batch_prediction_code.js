@@ -57,8 +57,8 @@ async function model_makePrediction(fname) {
 				
 		}).slice(0, 3);
 		
-		$("#prediction-list").append(`<li class="w3-text-blue fname-font" style="list-style-type:none;">
-		${fname}</li>`);
+		// $("#prediction-list").append(`<li class="w3-text-blue fname-font" style="list-style-type:none;">
+		// ${fname}</li>`);
 		
 		top5.forEach(function (p) {
 			const className = p.className.replace(/_/g, ' '); // Replace underscores with spaces
