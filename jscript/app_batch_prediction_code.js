@@ -63,7 +63,11 @@ async function model_makePrediction(fname) {
 		top5.forEach(function (p) {
 			const className = p.className.replace(/_/g, ' '); // Replace underscores with spaces
 			const probabilityInPercentage = (p.probability * 100).toFixed(2) + '%'; // Multiply by 100 and format as a percentage
-			$("#prediction-list").append(`<li style="list-style-type:none;">${className}: ${probabilityInPercentage}</li>`);
+		
+			// Add a condition to exclude certain class names
+			if (p.className !== 'mel') { // Replace 'mel' with the class name you want to exclude
+				$("#prediction-list").append(`<li style="list-style-type:none;">${className}: ${probabilityInPercentage}</li>`);
+			}
 		});
 
 	
