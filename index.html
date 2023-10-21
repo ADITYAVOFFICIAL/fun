@@ -226,7 +226,6 @@
 <section class="section-padding pb-50">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="tabbed w3-animate-opacity w3-white" id="home">
             <div class="col-lg-6 col-md-9 mx-auto text-center mb-40">
                 <h2 class="section-title">Skin Disease <strong>Classifier</strong></h2>
             </div>
@@ -241,7 +240,7 @@
                         <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
                     </button>
                     <p class="w3-text-teal">Accepted image format = jpeg or png</p>
-                    <p>Model will take time to load, approximately 30 seconds</p>
+                    <p>Approximate waiting time : 30 seconds</p>
                 </div>
                 <div class="w3-center">
                     <div>
@@ -253,15 +252,8 @@
                     <p>Predicted Disease</p>
                     <ol class='w3-left-align text-color' id='prediction-list'></ol>
                 </div>
-                <div class="hide">
-                    <button id='predict-button'>Predict</button>
-                </div>
-                <div class="hide">
-                    <input id="image-selector" type="file" multiple>
-                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -509,7 +501,12 @@
 <!-- strat scroll to top -->
 <a href="#top" class="btn btn-primary scroll-to-top-btn smooth-scroll position-fixed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="currentColor" d="M7.2 19.2L15.2 11.2C15.68 10.71 16.43 10.68 16.96 11.08L17.08 11.2L25.08 19.2L23.2 21.08L16.14 14.02L9.08 21.08L7.2 19.2Z"></path></svg></a>
 <!-- end scroll to top -->
-
+<div class="hide">
+    <button id='predict-button'>Predict</button>
+</div>
+<div class="hide">
+    <input id="image-selector" type="file" multiple>
+</div>
 <!-- Plugins Needed for the Project -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
