@@ -233,35 +233,19 @@
                 <div class="w3-center w3-padding-bottom">
                     <img id="selected-image" class="adjust-imagee" src="https://cdn.vectorstock.com/i/preview-1x/66/14/default-avatar-photo-placeholder-profile-picture-vector-21806614.jpg" height="250" alt="Image for analysis" style="border-radius: 30px;">
                 </div>
-                <!-- Button -->
                 <div id="btnn" class="w3-center" style="padding-top: 10px;">
-                    <button class="btn btn-primary has-icon" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)" style="margin-bottom: 12px;"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i>
-                        <b>Upload Image</b>                                <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                    <button class="btn btn-primary has-icon" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)" style="margin-bottom: 12px;">
+                        <i class='fas fa-camera w3-padding-right' style='font-size:15px'></i>
+                        <b>Upload Image</b>
+                        <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
                     </button>
                     <p class="w3-text-teal">Accepted image format = jpeg or png</p>
-                    <p>Model will take time to load approx wait time = 30 sec</p>
+                    <p>Model will take time to load, approximately 30 seconds</p>
                 </div>
-                <!-- <div class="w3-center">
-                    <div class="progress-bar">
-                        <i class="fa fa-snowflake fa-spin" style="font-size:24px"></i>
-                        <p>Model is loading...</p>
-                    </div>
-                </div> -->
-                <!-- Progress Bar
-                Just here for graphics.
-                The functionality was not implemented because it slows down the model download
-                and causes it to fail.-->
-                <!-- <div class="w3-light-grey side-margin w3-opacity">
-                    <div  id="myBar" class="w3-container w3-blue" style="height:5px;width:100%"></div>
-                </div> -->
                 <div class="w3-center w3-border add-margin side-margin w3-round w3-sand text-color space-letters bottom-margin dont-break-out">
                     <p>Predicted Disease</p>
-                    <!-- Remember that an ordered or unordered list has tabs by default.
-                    CSS is not styling the prediction outputs. The tabs you see are the default
-                    tabs associated with lists.-->
                     <ol class='w3-left-align text-color' id='prediction-list'></ol>
                 </div>
-                <!-- Bottom Bar -->
                 <div class="hide">
                     <button id='predict-button'>Predict</button>
                 </div>
@@ -272,6 +256,7 @@
         </div>
     </div>
 </section>
+
 <!-- end of growth-rate -->
 <!-- start of how-it-works tab -->
 <section class="section-padding how-it-works-tab pt-0 overflow-hidden">
