@@ -79,8 +79,7 @@
                 </ul>
 
                 <div class="navbar-button">
-                    <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#signup-modal">Sign Up</button>
-                    <button class="btn btn-sm btn-link pr-xl-0" data-toggle="modal" data-target="#signin-modal">Log in<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path></svg></button>
+                    <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#signup-modal">GitHub Repository</button>
                 </div>
             </div>
             <!-- nav links -->
@@ -237,13 +236,14 @@
                 <!-- Button -->
                 <div id="btnn" class="w3-center" style="padding-top: 10px;">
                     <button class="btn btn-primary has-icon" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)" style="margin-bottom: 12px;"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i>
-                        <b>Upload Image</b></button>
+                        <b>Upload Image</b>                                <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                    </button>
                     <p class="w3-text-teal">Accepted image format = jpeg or png</p>
-                    <p>Model will take time to load approx wait time = 1 min</p>
+                    <p>Model will take time to load approx wait time = 30 sec</p>
                 </div>
                 <!-- <div class="w3-center">
-                    <div  class="progress-bar w3-text-teal space-letters">
-                        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+                    <div class="progress-bar">
+                        <i class="fa fa-snowflake fa-spin" style="font-size:24px"></i>
                         <p>Model is loading...</p>
                     </div>
                 </div> -->
@@ -251,9 +251,9 @@
                 Just here for graphics.
                 The functionality was not implemented because it slows down the model download
                 and causes it to fail.-->
-                <div class="w3-light-grey side-margin w3-opacity">
+                <!-- <div class="w3-light-grey side-margin w3-opacity">
                     <div  id="myBar" class="w3-container w3-blue" style="height:5px;width:100%"></div>
-                </div>
+                </div> -->
                 <div class="w3-center w3-border add-margin side-margin w3-round w3-sand text-color space-letters bottom-margin dont-break-out">
                     <p>Predicted Disease</p>
                     <!-- Remember that an ordered or unordered list has tabs by default.
