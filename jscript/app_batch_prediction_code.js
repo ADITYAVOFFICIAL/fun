@@ -64,7 +64,7 @@ async function model_makePrediction(fname) {
 // Modify the following code block in the model_makePrediction function
 top5.forEach(function (p) {
     const probabilityInPercentage = (p.probability * 100).toFixed(2) + '%'; // Multiply by 100 and format as a percentage
-    $("#prediction-list").append(`<li style="list-style-type:none;">${probabilityInPercentage}</li>`);
+    $("#prediction-list").append(`<li style="list-style-type:none;">${p.className}: ${probabilityInPercentage}</li>`);
 });
 
 	
