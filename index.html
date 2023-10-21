@@ -1,43 +1,606 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="zxx"><head>
+    <meta charset="utf-8">
+    <title>Copper - Software and SAAS landing template</title>
 
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta http-equiv="refresh" content="2; url = load.html" /> -->
-  <title>Recordings Archive</title>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- ** Plugins Needed for the Project ** -->    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/skin.css">
 
-  <meta content="Recordings" name="keywords">
-  <link rel="icon" href="./as/raw.png" type="image/x-icon">
-  <link rel="icon" href="./as/raw.png" type="icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./index.css">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
 
 </head>
-<body>
-  <div class="noise"></div>
-  <div class="overlay"></div>
-  <div class="terminal">
-    <div class="image-container">
-    <img src="./as/raw.png" alt="RAW">
-  </div>
-  <div class="image-container1">
-    <img src="./as/rs.png" alt="RESTRICTED SITE" class="image">
-  </div>
+<body id="top" data-spy="scroll" data-target="#navbar-spy" class="position-relative">
 
-    <h1>You are entering a restricted site<br> <span class="errorcode"> Research and Analytical Wing [RAW]</span></h1>
-    <p class="output">The page you are entering is unauthorised</p>
-    <p class="output">Your all activities are being monitored and recorded.</p>
-    <p class="output">NAME : SAHIL ADHIKARI</p>
-    <p class="output">GENDER : M</p>
-    <p class="output">REG PH NUMBER : 7639749287</p>
-    <p class="output">JOB : NIL</p>
-    <p class="output">EDU BACK : SRM, DLF PUBLIC SCHOOL, APS</p>
-    <p class="output">PARENT MAIL : deepak76adhikari@gmail.com</p>
-    <p class="output">Close browser with immediate effect</p>
-  </div>
-  <!-- partial -->
+    <!-- start of preloader -->
+    <div class="preloader position-fixed d-flex align-items-center justify-content-center">
+        <div class="block">
+            <div class="loader-image mb-20">
+                <img src="images/preloader.png" alt="">
+            </div>
+            <div class="loader-text text-uppercase">
+                <span class="mb-1">Welcome to</span>
+                <span>Skin Disease Calssifier</span>
+            </div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+  
+<!-- start of header -->
+<header class="header-nav position-relative bg-light-gray">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light px-0">
+            <a class="navbar-brand p-0" href="index.html"><img class="img-fluid" src="images/logo.png" alt="logo" height="10" width="100"></a>
+            <!-- logo -->
 
-</body>
+            <button class="navbar-toggler bg-white rounded-0 p-0" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navlinks" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="nav-toggle-icon" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path><path class="line middle" d="m 70,50 h -40"></path><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path></svg>
+            </button>
+            <!-- mobile-nav control button -->
+            
+            <div class="collapse navbar-collapse" id="navlinks">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item @@about">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item @@service">
+                        <a class="nav-link" href="services.html">Service</a>
+                    </li>
+                    <li class="nav-item @@team">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item dropdown @@pricing">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-1">Pricing</span>
+                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.06L7.94 0L4.5 3.44L1.06 0L0 1.06L4.5 5.56L9 1.06Z" fill="currentColor"></path></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item @@pricingOne" href="pricing.html">Pricing 01</a></li>
+                            <li><a class="dropdown-item @@pricingTwo" href="pricing-2.html">Pricing 02</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item @@contact">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown @@pages">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-1">Pages</span>
+                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.06L7.94 0L4.5 3.44L1.06 0L0 1.06L4.5 5.56L9 1.06Z" fill="currentColor"></path></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item @@howItWorks" href="how-it-works.html">How It Works</a></li>
+                            <li><a class="dropdown-item @@testimonials" href="testimonials.html">Testimonials</a></li>
+                            <li class="sub-dropdown @@career">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Career</span>
+                                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.06L7.94 0L4.5 3.44L1.06 0L0 1.06L4.5 5.56L9 1.06Z" fill="currentColor"></path></svg>
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-item @@careerPage" href="career.html">Career</a></li>
+                                    <li><a class="dropdown-item @@jobDetails" href="job-details.html">Job Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-dropdown @@blogs">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Blogs</span>
+                                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.06L7.94 0L4.5 3.44L1.06 0L0 1.06L4.5 5.56L9 1.06Z" fill="currentColor"></path></svg>
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item @@blogDetails" href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item @@terms" href="terms.html">Terms &amp; Condition</a></li>
+                            <li><a class="dropdown-item @@privacy" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item @@faq" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item @@changelog" href="changelog.html">Changelog</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-</html>
+                <div class="navbar-button">
+                    <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#signup-modal">Sign Up</button>
+                    <button class="btn btn-sm btn-link pr-xl-0" data-toggle="modal" data-target="#signin-modal">Log in<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path></svg></button>
+                </div>
+            </div>
+            <!-- nav links -->
+        </nav>
+    </div>
+</header>
+<!-- end of header -->
+
+<!-- signup-modal -->
+<div class="modal fade rounded" id="signup-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title font-weight-bold">Sign up now</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 p-sm-4">
+                <form method="POST" class="needs-validation row" novalidate="">
+                    <div class="form-group mb-20 col-md-6">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="fname">First Name*</label>
+                        <input class="form-control shadow-none" type="text" placeholder="Jack" id="fname" required="">
+                        <p class="font-weight-bold invalid-feedback">Your first name is required!</p>
+                    </div>
+                    <div class="form-group mb-20 col-md-6">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="lname">Last Name*</label>
+                        <input class="form-control shadow-none" type="text" placeholder="Barker" id="lname" required="">
+                        <p class="font-weight-bold invalid-feedback">Your last name is required!</p>
+                    </div>
+                    <div class="form-group mb-20 col-12">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="email2">Email Address*</label>
+                        <input class="form-control shadow-none" type="email" placeholder="jack@email.com" id="email2" required="">
+                        <p class="font-weight-bold invalid-feedback">Your email is required!</p>
+                    </div>
+                    <div class="form-group mb-20 col-12">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="password">Password*</label>
+                        <input class="form-control shadow-none" type="password" id="password" required="">
+                        <p class="font-weight-bold invalid-feedback">Your password is required!</p>
+                    </div>
+                    <div class="form-group mb-20 col-12">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="repassword">Retype Password*</label>
+                        <input class="form-control shadow-none" type="password" id="repassword" required="">
+                        <p class="font-weight-bold invalid-feedback">Please retype your password.</p>
+                    </div>
+                    <div class="form-group col-12">
+                        <button class="btn btn-primary w-100" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- signup-modal -->
+
+<!-- login-modal -->
+<div class="modal fade rounded" id="signin-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto" style="max-width:400px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title font-weight-bold">Welcome back</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 p-sm-4">
+                <form method="POST" class="needs-validation row" novalidate="">
+                    <div class="form-group mb-20 col-12">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="email">Email Address*</label>
+                        <input class="form-control shadow-none" type="email" id="email" required="">
+                        <p class="font-weight-bold invalid-feedback">Your email is required!</p>
+                    </div>
+                    <div class="form-group mb-20 col-12">
+                        <label class="text-black-200 h6 font-weight-600 mb-2" for="passwordSignIn">Password*</label>
+                        <input class="form-control shadow-none" type="password" id="passwordSignIn" required="">
+                        <p class="font-weight-bold invalid-feedback">Your password is required!</p>
+                    </div>
+                    <div class="form-group col-12">
+                        <button class="btn btn-primary w-100" type="submit">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login-modal -->
+
+<!-- start of banner -->
+<section class="banner bg-cover-bottom has-shapes bg-light-gray has-bg-brash bg-brash-bottom" style="background-image: url(images/banner.svg)" data-aos="fade-in" data-aos-delay="150">
+    <div class="container h-100">
+        <div class="d-block d-lg-flex no-gutters align-items-center h-100">
+            <div class="col-12 col-xl-8 col-lg-8 order-lg-1">
+                <div class="banner-image has-video-popup has-shapes mb-4 mb-md-5 mb-lg-0">
+                    <button type="button" class="video-play-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/dyZcRRWiuuw" data-target="#videoModal"><svg width="1.8em" height="1.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg></button>
+
+                    <img class="img-fluid" src="images/banner-shot.png" alt="">
+
+                    <div class="shape-lg bg-tertiary rounded-circle"></div>
+                    <div class="shape-md bg-primary rounded-circle"></div>
+                    <div class="shape-sm bg-secondary rounded-circle"></div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 order-lg-0">
+                <h2 class="h1 mb-20">Give Your customers human feeling touch <strong>Like Never Before</strong></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+
+                <form action="" method="post" class="needs-validation mt-30" novalidate="">
+                    <div class="input-group d-block d-sm-flex">
+                        <input type="email" class="form-control bg-transparent" placeholder="name@email.com" required="">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary has-icon ml-15">Request Demo
+                                <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="divider-text mt-25 mb-25"><span class="bg-light-gray">OR</span></div>
+
+                <a href="#!" class="btn btn-outline-secondary d-flex align-items-center justify-content-center">
+                <img class="mr-2" src="images/google.png" alt="">Sign Up With Google</a>
+                
+                <p class="content has-underdot-link text-black-700 mt-15">No credit card required. Available on
+                    <a href="#!">Mac</a>,
+                    <a href="#!">Windows</a>,
+                    <a href="#!">iOS</a>, &amp;
+                    <a href="#!">Android</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shape-1 shape-sm bg-secondary rounded-circle"></div>
+    <div class="shape-3 shape-sm-2 bg-primary rounded-circle"></div>
+    <div class="shape-4 shape-sm-2 bg-primary rounded-circle"></div>
+    <div class="shape-5 shape-xs bg-secondary rounded-circle"></div>
+    <div class="shape-6 shape-xs bg-tertiary rounded-circle"></div>
+    <div class="shape-7 shape-xs-2 bg-tertiary rounded-circle"></div>
+    <div class="shape-8 shape-xs-2 bg-primary rounded-circle"></div>
+</section>
+<!-- end of banner -->
+
+<!-- start of growth-rate -->
+<section class="section-padding pb-50">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 w3-content">
+                <div class="w3-center w3-padding-bottom">
+                    <img id="selected-image" class="adjust-imagee" src="https://cdn.vectorstock.com/i/preview-1x/66/14/default-avatar-photo-placeholder-profile-picture-vector-21806614.jpg" height="250" alt="Image for analysis" style="border-radius: 30px;">
+                </div>
+                <!-- Button -->
+                <div id="btnn" class="w3-center" style="padding-top: 10px;">
+                    <button class="btn btn-primary has-icon" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)" style="margin-bottom: 12px;"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i>
+                        <b>Upload Image</b></button>
+                    <p class="w3-text-teal">Accepted image format = jpeg or png</p>
+                    <p>Model will take time to load approx wait time = 1 min</p>
+                </div>
+                <!-- <div class="w3-center">
+                    <div  class="progress-bar w3-text-teal space-letters">
+                        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+                        <p>Model is loading...</p>
+                    </div>
+                </div> -->
+                <!-- Progress Bar
+                Just here for graphics.
+                The functionality was not implemented because it slows down the model download
+                and causes it to fail.-->
+                <div class="w3-light-grey side-margin w3-opacity">
+                    <div  id="myBar" class="w3-container w3-blue" style="height:5px;width:100%"></div>
+                </div>
+                <div class="w3-center w3-border add-margin side-margin w3-round w3-sand text-color space-letters bottom-margin dont-break-out">
+                    <p>Predicted Disease</p>
+                    <!-- Remember that an ordered or unordered list has tabs by default.
+                    CSS is not styling the prediction outputs. The tabs you see are the default
+                    tabs associated with lists.-->
+                    <ol class='w3-left-align text-color' id='prediction-list'></ol>
+                </div>
+                <!-- Bottom Bar -->
+                <div class="hide">
+                    <button id='predict-button'>Predict</button>
+                </div>
+                <div class="hide">
+                    <input id="image-selector" type="file" multiple>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of growth-rate -->
+
+<!-- start of brand-carousel -->
+<section class="section-padding overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" data-aos="fade-left">
+                <div class="brand-carousel">
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/01-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/02-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/04-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/03-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/05-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/06-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/04-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/02-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/01-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/06-colored.png" alt=""></div>
+                    <div class="brand-item d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/05-colored.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of brand-carousel -->
+
+
+
+<!-- start of how-it-works tab -->
+<section class="section-padding how-it-works-tab pt-0 overflow-hidden">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-9 text-center mb-40">
+                <h2 class="section-title">How <strong>it Works</strong></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.</p>
+            </div>
+            <div class="col-lg-11">
+                <ul class="nav nav-pills justify-content-center mb-20" id="pills-tab" role="tablist">
+                    <li class="nav-item mb-20" role="presentation">
+                        <a class="nav-link active" id="pill-management-tab" data-toggle="pill" href="#management-tab" role="tab" aria-controls="management-tab" aria-selected="true">
+                            <i class="circle-shape"></i>Input Image
+                        </a>
+                    </li>
+                    <li class="nav-item mb-20" role="presentation">
+                        <a class="nav-link" id="pill-chat-tab" data-toggle="pill" href="#chat-tab" role="tab" aria-controls="chat-tab" aria-selected="false">
+                            <i class="circle-shape"></i>Image is processed
+                        </a>
+                    </li>
+                    <li class="nav-item mb-20" role="presentation">
+                        <a class="nav-link" id="pill-analytics-tab" data-toggle="pill" href="#analytics-tab" role="tab" aria-controls="analytics-tab" aria-selected="false">
+                            <i class="circle-shape"></i>Prediction
+                        </a>
+                    </li>
+                    <li class="nav-item mb-20" role="presentation">
+                        <a class="nav-link" id="pill-collaboration-tab" data-toggle="pill" href="#collaboration-tab" role="tab" aria-controls="collaboration-tab" aria-selected="false">
+                            <i class="circle-shape"></i>Results Displayed
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="pills-tabContent" data-aos="fade-in">
+                    <div class="tab-pane fade show active" id="management-tab" role="tabpanel" aria-labelledby="pill-management-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 anim-to-top">
+                                <img class="img-fluid rounded-lg shadow" src="images/how-it-works-1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0 anim-to-bottom">
+                                <h2 class="section-title">Task <strong>Management</strong></h2>
+                                <p class="mb-30">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. At vero eos et accusam et justo duo dolores et ea rebum satet</p>
+                                <a href="how-it-works.html" class="btn btn-primary has-icon">View More
+                                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="chat-tab" role="tabpanel" aria-labelledby="pill-chat-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 anim-to-top">
+                                <img class="img-fluid rounded-lg shadow" src="images/03_1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0 anim-to-bottom">
+                                <h2 class="section-title">Built In <strong>Chat</strong></h2>
+                                <p class="mb-30">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. At vero eos et accusam et justo duo dolores et ea rebum satet</p>
+                                <a href="how-it-works.html" class="btn btn-primary has-icon">View More
+                                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="analytics-tab" role="tabpanel" aria-labelledby="pill-analytics-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 anim-to-top">
+                                <img class="img-fluid rounded-lg shadow" src="images/04_1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0 anim-to-bottom">
+                                <h2 class="section-title">Project <strong>Analytics</strong></h2>
+                                <p class="mb-30">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. At vero eos et accusam et justo duo dolores et ea rebum satet</p>
+                                <a href="how-it-works.html" class="btn btn-primary has-icon">View More
+                                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="collaboration-tab" role="tabpanel" aria-labelledby="pill-collaboration-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 anim-to-top">
+                                <img class="img-fluid rounded-lg shadow" src="images/how-it-works-1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0 anim-to-bottom">
+                                <h2 class="section-title">Task <strong>Collaboration</strong></h2>
+                                <p class="mb-30">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. At vero eos et accusam et justo duo dolores et ea rebum satet</p>
+                                <a href="how-it-works.html" class="btn btn-primary has-icon">View More
+                                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of how-it-works tab -->
+
+<!-- start of tools-use -->
+<section class="section-padding tools-use-section has-shapes bg-light-gray has-bg-brash bg-brash-y" style="background-image: url(images/section-top.svg), url(images/section-bottom.svg);">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <h2 class="section-title">Integrate the <strong>tools you already use</strong></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed. </p>
+            </div>
+            <div class="col-lg-6">
+                <ul class="inCircle-tools d-block d-sm-flex align-items-center justify-content-center" id="inCircle-element">
+                    <li class="has-centered lg d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/01.png" alt="">
+                    </li>
+                    <li class="md d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/02.png" alt="">
+                    </li>
+                    <li class="xs d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/03.png" alt="">
+                    </li>
+                    <li class="md d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/04.png" alt="">
+                    </li>
+                    <li class="sm d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/05.png" alt="">
+                    </li>
+                    <li class="md d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/06.png" alt="">
+                    </li>
+                    <li class="md d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/07.png" alt="">
+                    </li>
+                    <li class="xs d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle">
+                        <img src="images/08.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shape-1 shape-xs bg-secondary rounded-circle"></div>
+    <div class="shape-2 shape-sm bg-primary rounded-circle d-none d-md-block"></div>
+    <div class="shape-3 shape-xs-2 bg-primary rounded-circle"></div>
+    <div class="shape-4 shape-xs bg-tertiary rounded-circle"></div>
+    <div class="shape-5 shape-xs bg-tertiary rounded-circle"></div>
+    <div class="shape-6 shape-md bg-secondary rounded-circle d-none d-md-block"></div>
+</section>
+<!-- end of tools-use -->
+
+<!-- start footer -->
+<footer class="bg-light-gray has-shapes has-bg-brash bg-brash-top " style="background-image: url(images/footer.svg)">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="text-center pb-60">
+                    <h2 class="section-title">Visit the  <strong>GitHub Repository</strong></h2>
+                    <a href="contact.html" class="btn btn-primary has-icon">Github Repository
+                        <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5522 6.66669L20.5522 14.6667C21.0329 15.1473 21.0699 15.9036 20.6632 16.4267L20.5522 16.5523L12.5522 24.5523L10.6666 22.6667L17.7228 15.6095L10.6666 8.55231L12.5522 6.66669Z" fill="currentColor"></path></svg></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="border-bottom"></div>
+            </div>
+        </div>
+        <div class="row pt-60 pb-60">
+            <div class="col-lg-4 col-md-6">
+                <div class="pr-0 pr-lg-4">
+                    <img class="mb-25" src="images/logo.png" alt="logo" height="50" width="100">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolore magna aliquyam eratnonumy onsetetur</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md col-sm-6">
+                <div class="pl-0 pl-md-3 mt-5 mt-md-0">
+                    <h5 class="font-weight-600 mb-20">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md col-sm-6">
+                <div class="pl-0 pl-md-3 mt-5 mt-md-0">
+                    <h5 class="font-weight-600 mb-20">Social Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#!">Facebook</a></li>
+                        <li><a href="#!">Instagram</a></li>
+                        <li><a href="#!">Twitter</a></li>
+                        <li><a href="#!">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pl-0 pl-lg-4 mt-5 mt-lg-0">
+                    <h5 class="font-weight-600">Lets Subscribe Your Email</h5>
+                    <form action="" method="post" class="needs-validation mt-30" novalidate="">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-gray" placeholder="Your email address" required="">
+                            <div class="input-group-append ml-0">
+                                <button type="submit" class="btn btn-primary"><svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.7071 8.70808C31.0976 8.31756 31.0976 7.68439 30.7071 7.29387L24.3431 0.929909C23.9526 0.539384 23.3195 0.539384 22.9289 0.929909C22.5384 1.32043 22.5384 1.9536 22.9289 2.34412L28.5858 8.00098L22.9289 13.6578C22.5384 14.0484 22.5384 14.6815 22.9289 15.072C23.3195 15.4626 23.9526 15.4626 24.3431 15.072L30.7071 8.70808ZM0 9.00098H30V7.00098H0V9.00098Z" fill="white"></path></svg></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block border-top text-center content">
+                        Copyright © 2020 Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape-1 shape-xs bg-primary rounded-circle"></div>
+    <div class="shape-2 shape-sm-2 bg-tertiary rounded-circle"></div>
+    <div class="shape-3 shape-sm bg-secondary rounded-circle"></div>
+    <div class="shape-4 shape-xs-2 bg-tertiary rounded-circle"></div>
+    <div class="shape-5 shape-sm-2 bg-secondary rounded-circle"></div>
+    <div class="shape-6 shape-sm-2 bg-primary rounded-circle"></div>
+</footer>
+<!-- end footer -->
+
+<!-- start of videoModal -->
+<div class="modal fade rounded" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0 bg-transparent">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="showVideo" allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of videoModal -->
+
+<!-- strat scroll to top -->
+<a href="#top" class="btn btn-primary scroll-to-top-btn smooth-scroll position-fixed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="currentColor" d="M7.2 19.2L15.2 11.2C15.68 10.71 16.43 10.68 16.96 11.08L17.08 11.2L25.08 19.2L23.2 21.08L16.14 14.02L9.08 21.08L7.2 19.2Z"></path></svg></a>
+<!-- end scroll to top -->
+
+<!-- Plugins Needed for the Project -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/shuffle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="jscript/target_classes.js"></script>
+<script src="jscript/app_startup_code.js"></script>
+<script src="jscript/app_batch_prediction_code.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+
+</body></html>
