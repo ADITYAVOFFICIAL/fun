@@ -72,7 +72,6 @@ async function model_makePrediction(fname) {
 
 	
 	// Add a space after the prediction for each image
-	$("#prediction-list").append(`<br>`);
 		
 }
 
