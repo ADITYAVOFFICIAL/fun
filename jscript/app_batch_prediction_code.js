@@ -62,12 +62,12 @@ async function model_makePrediction(fname) {
 	${fname}</li>`);
 	
 	//$("#prediction-list").empty();
-	top5.forEach(function (p) {
-	
-		$("#prediction-list").append(`<li style="list-style-type:none;">${p.className}: ${p.probability.toFixed(3)}</li>`);
-	
-		
-	});
+	// Modify the following code block in the model_makePrediction function
+top5.forEach(function (p) {
+    const probabilityInPercentage = (p.probability * 100).toFixed(2) + '%'; // Multiply by 100 and format as a percentage
+    $("#prediction-list").append(`<li style="list-style-type:none;">${p.className}: ${probabilityInPercentage}</li>`);
+});
+
 	
 	// Add a space after the prediction for each image
 	$("#prediction-list").append(`<br>`);
