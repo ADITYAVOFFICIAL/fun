@@ -59,12 +59,12 @@ async function model_makePrediction(fname) {
 		
 	// Append the file name to the prediction list
 	$("#prediction-list").append(`<li class="w3-text-blue fname-font" style="list-style-type:none;">
-	${fname}</li>`);
+    ${fname}</li>`);
 	
 // Modify the following code block in the model_makePrediction function
 top5.forEach(function (p) {
     const probabilityInPercentage = (p.probability * 100).toFixed(2) + '%'; // Multiply by 100 and format as a percentage
-    $("#prediction-list").append(`<li style="list-style-type:none;">${p.className}: ${probabilityInPercentage}</li>`);
+    $("#prediction-list").append(`<li style="list-style-type:none;">${probabilityInPercentage}</li>`);
 });
 
 	
@@ -72,8 +72,6 @@ top5.forEach(function (p) {
 	$("#prediction-list").append(`<br>`);
 		
 }
-
-
 
 
 // =====================
