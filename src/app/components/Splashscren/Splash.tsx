@@ -25,8 +25,7 @@ const Splash = () => {
 
   return (
     <div className="splash-screen">
-       {/* Replace <img> with <Image /> and provide width and height */}
-       <Image src="bat.gif" className="bat-gif" alt="Moving Bat" width={500} height={300} />
+       <Image src="/bat.gif" className="bat-gif" alt="Moving Bat" width={500} height={300} />
       <div className="first-text">
         {/* Escape apostrophe */}
         It&apos;s exactly what you thought could happen

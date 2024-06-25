@@ -69,7 +69,7 @@ const Yep = () => {
       // Redirect after animation (wait for animation to complete)
       setTimeout(() => {
         const target = e.target as HTMLAnchorElement; // Asserting the target as HTMLAnchorElement
-        window.location.href = target.href || 'https://google.com'; // Default redirect
+        window.location.href = target.href || 'https://wa.me/qr/JOEO5CKOGLUOF1'; // Default redirect
       }, 20000); // Adjust delay time as needed based on confetti animation duration
     }, 1000); // Adjust delay to start sending email after 1 second
   };
@@ -86,7 +86,7 @@ const Yep = () => {
           priority
         />
         <a
-          href="https://google.com"
+          href="https://wa.me/qr/JOEO5CKOGLUOF1"
           onClick={handleConfetti}
           className="link inline-flex items-center py-2 px-4 text-sm font-medium text-white text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
