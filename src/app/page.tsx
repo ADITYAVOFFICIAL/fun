@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import Splash from './components/Splashscren/Splash';
-
+import Link from 'next/link';
 function Home() {
   const [noClickCount, setNoClickCount] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -46,12 +46,12 @@ function Home() {
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">I have a crush on you</h5>
           <span className="text-sm text-gray-500 dark:text-gray-400">Wanna go out on date with me?</span>
           <div className="flex mt-4 space-x-3 md:mt-6">
-            <a
-              href="/yep"
-              className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Yes
-            </a>
+          <Link
+  href="/yep"
+  className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+>
+  Yes
+</Link>
             <div className="relative">
               <button
                 onClick={handleNoClick}
