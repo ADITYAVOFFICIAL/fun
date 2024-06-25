@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image'; // Import Image from next/image
 import './Splash.css';
 
 const Splash = () => {
@@ -24,9 +25,11 @@ const Splash = () => {
 
   return (
     <div className="splash-screen">
-       <img src="bat.gif" className="bat-gif" alt="Moving Bat" />
+       {/* Replace <img> with <Image /> and provide width and height */}
+       <Image src="bat.gif" className="bat-gif" alt="Moving Bat" width={500} height={300} />
       <div className="first-text">
-        It's exactly what you thought could happen
+        {/* Escape apostrophe */}
+        It&apos;s exactly what you thought could happen
       </div>
       {showSecondText && (
         <div className="second-text">
