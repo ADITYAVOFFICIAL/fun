@@ -49,3 +49,9 @@ body {
   width: auto; /* Adjust to match the image's width */
   margin-top: 20px; /* 20px below the image */
 }
+.startimg{
+  width: 250px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}

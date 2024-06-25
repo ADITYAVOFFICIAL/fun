@@ -19,7 +19,7 @@ function Home() {
     // Simulate loading or fetching data
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Adjust the time based on your app's loading time
+    }, 5500); // Adjust the time based on your app's loading time
     return () => clearTimeout(timer);
   }, []);
   const handleNoClick = () => {
@@ -36,11 +36,11 @@ function Home() {
       <div className="relative w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 rounded-lg border border-gray-300 bg-black/30 shadow-xl border-neutral-700 bg-zinc-800/30 backdrop-blur-lg">
         <div className="flex flex-col items-center pb-10" style={{ opacity: "80%", color: "white" }}>
           <Image
-            src="/vercel.svg"
+            src="/start.jpeg"
             alt="Vercel Logo"
-            className="mt-6 h-24 w-24 invert"
-            width={96}
-            height={96}
+            className="mt-6 h-24 w-24 startimg"
+            width={120}
+            height={120}
             priority
           />
           <h5 className="mb-1 text-xl font-medium text-white">I have a crush on you</h5>
