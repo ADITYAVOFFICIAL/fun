@@ -11,7 +11,7 @@ const Yep = () => {
 
     // Assuming you have imported and configured the confetti function correctly
     // Play audio
-    const audio = new Audio('/nope.mp3');
+    const audio = new Audio('/start.mp3');
     audio.loop = true;
     audio.play().catch((error) => console.error('Error playing audio:', error));
 
@@ -28,7 +28,7 @@ const Yep = () => {
     });
 
     // Burst 2 to 6: Confetti from random places on the screen
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 15; i++) {
       setTimeout(() => {
         confetti({
           particleCount: 100,
@@ -38,7 +38,7 @@ const Yep = () => {
             y: randomInRange(0.1, 0.9)
           }
         });
-      }, (i + 1) * 1000); // Delay each burst by 1 second (adjust as needed)
+      }, (i + 1) * 2000); // Delay each burst by 1 second (adjust as needed)
     }
 
     // Simulate sending email to Formspree
@@ -70,7 +70,7 @@ const Yep = () => {
       setTimeout(() => {
         const target = e.target as HTMLAnchorElement; // Asserting the target as HTMLAnchorElement
         window.location.href = target.href || 'https://google.com'; // Default redirect
-      }, 6000); // Adjust delay time as needed based on confetti animation duration
+      }, 20000); // Adjust delay time as needed based on confetti animation duration
     }, 1000); // Adjust delay to start sending email after 1 second
   };
 

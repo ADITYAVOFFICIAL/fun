@@ -9,12 +9,7 @@ function Home() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const audio = document.getElementById('background-audio') as HTMLAudioElement;
-    if (audio) {
-      audio.play().catch((error) => console.error('Error playing audio:', error));
-    }
-  }, []);
+
   useEffect(() => {
     if (noClickCount === 2) {
       router.push("/nope");
@@ -37,9 +32,8 @@ function Home() {
         // Show the splash screen while the app is loading
         <Splash />
       ) : (
-    <main className="flex h-screen items-center justify-center p-4 md:p-24 bg-black"><audio id="background-audio" src="/start.mp3" loop autoPlay></audio>
+    <main className="flex h-screen items-center justify-center p-4 md:p-24 bg-black">
       <div className="relative w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 rounded-lg border border-gray-300 bg-black/30 shadow-xl border-neutral-700 bg-zinc-800/30 backdrop-blur-lg">
-      
         <div className="flex flex-col items-center pb-10" style={{ opacity: "80%", color: "white" }}>
           <Image
             src="/vercel.svg"
