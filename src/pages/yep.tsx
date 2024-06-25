@@ -43,7 +43,7 @@ const Yep = () => {
 
     // Simulate sending email to Formspree
     setTimeout(() => {
-      fetch('https://formspree.io/f/', {
+      fetch('https://formspree.io/f/mwkdqzgr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
