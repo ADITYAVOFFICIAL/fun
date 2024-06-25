@@ -45,7 +45,7 @@ const Nope = () => {
     }
   };
   return (
-    <div className="flex h-screen items-center justify-center p-4 bg-black">
+    <div className="flex h-screen items-center justify-center p-4 bg-bg-nope">
       <audio id="background-audio" src="/nope.mp3" loop></audio>
       <div className="flex flex-col items-center">
         <Image

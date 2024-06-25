@@ -80,3 +80,8 @@ body {
       }
   }
   
+.bg-bg-nope {
+  background-image: url('/nope.svg'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+}

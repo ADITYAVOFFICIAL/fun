@@ -66,4 +66,8 @@ body {
         margin-top: 8rem; /* Increase space between image and button on small screens */
       }
   }
-  
+  .bg-bg-yep {
+    background-image: url('/yep.svg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+  }

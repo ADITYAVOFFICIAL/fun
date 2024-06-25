@@ -75,7 +75,7 @@ const Yep = () => {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center p-4 md:p-24 bg-black">
+    <div className="flex h-screen items-center justify-center p-4 md:p-24 bg-bg-yep">
       <div className="flex flex-col items-center">
         <Image
           src="/happy.webp"

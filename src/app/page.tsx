@@ -32,7 +32,7 @@ function Home() {
         // Show the splash screen while the app is loading
         <Splash />
       ) : (
-    <main className="flex h-screen items-center justify-center p-4 md:p-24 bg-black">
+    <main className="flex h-screen items-center justify-center p-4 md:p-24 bg-bg-svg">
       <div className="relative w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 rounded-lg border border-gray-300 bg-black/30 shadow-xl border-neutral-700 bg-zinc-800/30 backdrop-blur-lg">
         <div className="flex flex-col items-center pb-10" style={{ opacity: "80%", color: "white" }}>
           <Image

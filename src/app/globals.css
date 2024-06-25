@@ -15,6 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.bg-bg-svg {
+  background-image: url('/bg.svg'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+}
 
 body {
   color: rgb(var(--foreground-rgb));

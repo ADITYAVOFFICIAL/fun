@@ -26,11 +26,11 @@ const Splash = () => {
     <div className="splash-screen">
        <img src="bat.gif" className="bat-gif" alt="Moving Bat" />
       <div className="first-text">
-        Exactly what you thought could happen
+        It's exactly what you thought could happen
       </div>
       {showSecondText && (
         <div className="second-text">
-          I really hope you understand
+          I was too afraid to tell you
         </div>
       )}
     </div>
