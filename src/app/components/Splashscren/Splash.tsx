@@ -24,7 +24,7 @@ const Splash = () => {
 
   return (
     <div className="splash-screen">
-       <img src="bat.gif" class="bat-gif" alt="Moving Bat"></img>
+       <img src="bat.gif" className="bat-gif" alt="Moving Bat" />
       <div className="first-text">
         Exactly what you thought could happen
       </div>
