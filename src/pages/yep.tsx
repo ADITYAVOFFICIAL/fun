@@ -6,7 +6,7 @@ import confetti from 'canvas-confetti';
 const Yep = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
 
-  const handleConfetti = (e) => {
+  const handleConfetti = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault(); // Prevent default behavior of the link
 
     // Play audio
