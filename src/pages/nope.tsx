@@ -72,7 +72,7 @@ const Nope = () => {
 <button
           type="button"
           onClick={handleSubmit}
-          className="ml-2 mt-3 py-2 px-4 text-sm font-medium rounded-lg  focus:ring-4 focus:outline-non bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+          className="ml-2 mt-3 py-2 px-4 text-sm font-medium rounded-lg  text-white focus:ring-4 focus:outline-non bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Send
         </button>

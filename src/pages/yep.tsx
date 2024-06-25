@@ -88,7 +88,7 @@ const Yep = () => {
         <a
           href="https://google.com"
           onClick={handleConfetti}
-          className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+          className="link inline-flex items-center py-2 px-4 text-sm font-medium text-white text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Schedule a date
         </a>
