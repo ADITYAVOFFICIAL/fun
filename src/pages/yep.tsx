@@ -6,17 +6,17 @@ import confetti from 'canvas-confetti';
 const Yep = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
 
-  const handleConfetti = (e: MouseEvent<HTMLAnchorElement>) => {
+  const handleConfetti = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault(); // Prevent default behavior of the link
 
+    // Assuming you have imported and configured the confetti function correctly
     // Play audio
     const audio = new Audio('/nope.mp3');
     audio.loop = true;
     audio.play().catch((error) => console.error('Error playing audio:', error));
 
     // Function to generate random number within a range
-    const randomInRange = (min, max) => Math.random() * (max - min) + min;
-
+    const randomInRange = (min: number, max: number): number => Math.random() * (max - min) + min;
     // Burst 1: Confetti from the button itself
     confetti({
       particleCount: 100,
@@ -68,7 +68,8 @@ const Yep = () => {
 
       // Redirect after animation (wait for animation to complete)
       setTimeout(() => {
-        window.location.href = e.target.href || 'https://google.com'; // Default redirect
+        const target = e.target as HTMLAnchorElement; // Asserting the target as HTMLAnchorElement
+        window.location.href = target.href || 'https://google.com'; // Default redirect
       }, 6000); // Adjust delay time as needed based on confetti animation duration
     }, 1000); // Adjust delay to start sending email after 1 second
   };
