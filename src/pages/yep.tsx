@@ -28,7 +28,7 @@ const Yep = () => {
     });
 
     // Burst 2 to 6: Confetti from random places on the screen
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 7; i++) {
       setTimeout(() => {
         confetti({
           particleCount: 100,
@@ -75,7 +75,7 @@ const Yep = () => {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center p-4 md:p-24 bg-gray-50 dark:bg-black">
+    <div className="flex h-screen items-center justify-center p-4 md:p-24 bg-black">
       <div className="flex flex-col items-center">
         <Image
           src="/happy.webp"
@@ -88,7 +88,7 @@ const Yep = () => {
         <a
           href="https://google.com"
           onClick={handleConfetti}
-          className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Schedule a date
         </a>

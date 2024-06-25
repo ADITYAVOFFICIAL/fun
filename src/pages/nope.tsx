@@ -45,7 +45,7 @@ const Nope = () => {
     }
   };
   return (
-    <div className="flex h-screen items-center justify-center p-4 md:p-24  dark:bg-black">
+    <div className="flex h-screen items-center justify-center p-4 bg-black">
       <audio id="background-audio" src="/nope.mp3" loop></audio>
       <div className="flex flex-col items-center">
         <Image
@@ -56,7 +56,7 @@ const Nope = () => {
           height={100}
           priority
         />
-        <Link href={"/yep"} className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">        
+        <Link href={"/yep"} className="link inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">        
         You can still say yes</Link>
             <textarea
   placeholder="Reasons for rejection..."
@@ -66,13 +66,13 @@ const Nope = () => {
     setErrorMessage('');
   }}
   required
-  className="mt-10 py-2 px-4 w-full max-w-lg h-32 text-sm text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  className="mt-10 py-2 px-4 w-full max-w-lg h-32 text-sm text-gray-900 rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
 ></textarea>
 {errorMessage && <p className="text-red-500 text-sm mt-1">{errorMessage}</p>}
 <button
           type="button"
           onClick={handleSubmit}
-          className="ml-2 mt-3 py-2 px-4 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="ml-2 mt-3 py-2 px-4 text-sm font-medium rounded-lg  focus:ring-4 focus:outline-non bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Send
         </button>
