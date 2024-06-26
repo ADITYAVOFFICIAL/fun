@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import './yep.css'; // Import the custom styles
 import confetti from 'canvas-confetti';
-
+import Link from 'next/link';
 const Yep = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -70,8 +70,8 @@ const Yep = () => {
       setTimeout(() => {
         const target = e.target as HTMLAnchorElement; // Asserting the target as HTMLAnchorElement
         window.location.href = target.href || 'https://wa.me/qr/JOEO5CKOGLUOF1'; // Default redirect
-      }, 20000); // Adjust delay time as needed based on confetti animation duration
-    }, 1000); // Adjust delay to start sending email after 1 second
+      }, 17900); // Adjust delay time as needed based on confetti animation duration
+    }, 50); // Adjust delay to start sending email after 1 second
   };
 
   return (
@@ -85,13 +85,14 @@ const Yep = () => {
           height={100}
           priority
         />
-        <a
-          href="https://wa.me/qr/JOEO5CKOGLUOF1"
+        <Link
+          href="/date"
           onClick={handleConfetti}
           className="link inline-flex items-center py-2 px-4 text-sm font-medium text-white text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Schedule a date
-        </a>
+        </Link>
+        <div className="footer-container"><p className="footer">Developed by Aditya Verma</p></div>
       </div>
     </div>
   );

@@ -96,7 +96,7 @@ function Home() {
               {!showCard && !audioPlayed && (
                 <button
                   onClick={handlePlayAudio}
-                  className="mt-10 inline-flex items-center py-10 px-20 text-sm font-medium text-center rounded-lg focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+                  className="mt-10 font-extrabold inline-flex items-center py-10 px-20 text-sm font-medium text-center rounded-lg focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                 >
                   SHOW ME
                 </button>

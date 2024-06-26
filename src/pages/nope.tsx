@@ -76,6 +76,7 @@ const Nope = () => {
         >
           Send
         </button>
+        <div className="footer-container"><p className="footer">Developed by Aditya Verma</p></div>
       </div>
     </div>
   );

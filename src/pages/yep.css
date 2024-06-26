@@ -57,10 +57,29 @@ body {
 .link {
     margin-top: 15rem; /* Increase space between image and button on small screens */
   }
+  .footer {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    border-radius: 20px;
+    width: 250px;
+    padding: 1%;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
 @media (max-width: 576px) {
     .sadimg{
         margin-top: 0rem;
         scale: 3;
+    }
+    .footer{
+      padding: 3%;
     }
     .link {
         margin-top: 8rem; /* Increase space between image and button on small screens */

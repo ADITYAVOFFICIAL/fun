@@ -16,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children} <div className="footer-container"><p className="footer">Developed by Aditya Verma</p></div></body>
+     
     </html>
   );
 }

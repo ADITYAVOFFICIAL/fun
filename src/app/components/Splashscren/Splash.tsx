@@ -24,7 +24,7 @@ const Splash = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="splash-screen">
+    <div className="splash-screen bg-white dark:bg-black dark:text-white font-black">
        <Image src="/bat.gif" className="bat-gif" alt="Moving Bat" width={500} height={300} />
       <div className="first-text">
         {/* Escape apostrophe */}

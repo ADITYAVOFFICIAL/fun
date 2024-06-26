@@ -39,7 +39,22 @@ body {
   height: 100vh; /* Full viewport height */
   position: relative;
 }
-
+.footer {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  display: inline-block;
+  border-radius: 20px;
+  width: 250px;
+  padding: 1%;
+  margin-top: 50px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
 .centered-image {
   margin-bottom: 30px; /* 10px above center + 20px gap */
   width: 300px; /* Adjust based on your needs */
@@ -52,7 +67,7 @@ body {
 .sadimg{
     margin-top: 10rem;
     border-radius: 3px;
-    scale: 7;
+    scale: 6;
 }
 @keyframes glow {
     0% {
@@ -77,6 +92,10 @@ body {
     }
     .link {
         margin-top: 8rem; /* Increase space between image and button on small screens */
+      }
+      .footer{
+        padding: 3%;
+        margin-top: 40px;
       }
   }
   
