@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './date.css'; // Import the custom styles
-
+import { useRouter } from 'next/router';
 const Date = () => {
+  const router = useRouter(); // Initialize useRouter hook
   const [formData, setFormData] = useState({
     dateAndTime: '',
     meetingPoint: '',
@@ -11,19 +12,19 @@ const Date = () => {
   const [showForm, setShowForm] = useState(false);
   const [showHearts, setShowHearts] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handlePlayAudioAndShowForm = () => {
-    const audio = document.getElementById('background-audio') as HTMLAudioElement;
+    const audio = document.getElementById('background-audio');
     if (audio) {
       audio.play().catch((error) => console.error('Error playing audio:', error));
     }
     setShowForm(true);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch('https://formspree.io/f/mwkdqzgr', {
@@ -43,7 +44,10 @@ const Date = () => {
           otherDetails: ''
         });
         setShowHearts(true);
-        setTimeout(() => setShowHearts(false), 5000); // Hide hearts after 5 seconds
+        setTimeout(() => {
+          setShowHearts(false);
+          router.push('/endsplash'); // Redirect to /endsplash route using useRouter
+        }, 1000); // Hide hearts after 5 seconds and then redirect
       } else {
         alert('Failed to submit the form. Please try again.');
       }
