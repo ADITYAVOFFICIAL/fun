@@ -12,19 +12,19 @@ const Date = () => {
   const [showForm, setShowForm] = useState(false);
   const [showHearts, setShowHearts] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handlePlayAudioAndShowForm = () => {
-    const audio = document.getElementById('background-audio');
+    const audio = document.getElementById('background-audio') as HTMLAudioElement | null;
     if (audio) {
       audio.play().catch((error) => console.error('Error playing audio:', error));
     }
     setShowForm(true);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await fetch('https://formspree.io/f/mwkdqzgr', {
