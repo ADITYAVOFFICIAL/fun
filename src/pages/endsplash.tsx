@@ -1,3 +1,4 @@
+'use'
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -57,10 +58,10 @@ const EndSplash = () => {
             index === currentIndex ? (
               <motion.div
                 key={image}
-                initial={{ scale: 2, opacity: 0 }}
+                initial={{ scale: 2, opacity: 0.5 }}
                 animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 2, opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                exit={{ scale: 2, opacity: 0.5 }}
+                transition={{ duration: 1 }}
                 className={`image-container ${image === '/ken5.gif' ? 'ken5' : ''}`}
               >
                 <Image src={image} alt={`Slide ${index + 1}`} layout="fill" objectFit="cover" />
