@@ -5,9 +5,10 @@ import './endsplash.css';
 import '../app/globals.css';
 
 const images = [
-  '/ken.png',
+  '/ken9.gif',
   '/ken.gif',
   '/ken2.gif',
+  '/kken.gif',
   '/ken3.webp',
   '/ryan.gif',
   '/ken5.gif'
@@ -26,8 +27,8 @@ const EndSplash = () => {
             // Start the slideshow with a 1 second interval
             interval = setInterval(() => {
               setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-            }, 1300) as unknown as number; // Explicitly cast to number
-          }, 500);
+            }, 2000) as unknown as number; // Explicitly cast to number
+          }, 1000);
         }
       
         return () => {
