@@ -32,7 +32,7 @@ const Splash = () => {
       </div>
       {showSecondText && (
         <div className="second-text">
-          I don't know how you will react
+          I don&apos;t know how you will react
         </div>
       )}
     </div>
