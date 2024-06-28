@@ -10,10 +10,30 @@ function Locked() {
   const [isCorrectPassword, setIsCorrectPassword] = useState(false);
   const router = useRouter();
 
-  const handleUnlock = () => {
+  const handleUnlock = async () => {
     // Validate the password
     if (password === 'passedout') {
       setIsCorrectPassword(true);
+
+      // Ensure the URL is defined
+      const formspreeUrl = process.env.NEXT_PUBLIC_FORMSPREE_URL;
+      if (formspreeUrl) {
+        // Send message to process.env.NEXT_PUBLIC_FORMSPREE_URL
+        try {
+          await fetch(formspreeUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: 'Password Correctly Entered' }),
+          });
+        } catch (error) {
+          console.error('Error sending message:', error);
+        }
+      } else {
+        console.error('Formsprree URL is not defined in the environment variables');
+      }
+
       setTimeout(() => {
         router.push('/');
       }, 1000); // Adjust the timeout to match your slide animation duration

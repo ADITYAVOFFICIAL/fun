@@ -69,7 +69,7 @@ const Yep = () => {
       // Redirect after animation (wait for animation to complete)
       setTimeout(() => {
         const target = e.target as HTMLAnchorElement; // Asserting the target as HTMLAnchorElement
-        window.location.href = target.href || 'https://wa.me/qr/JOEO5CKOGLUOF1'; // Default redirect
+        window.location.href = target.href || '/date'; // Default redirect
       }, 17900); // Adjust delay time as needed based on confetti animation duration
     }, 50); // Adjust delay to start sending email after 1 second
   };
