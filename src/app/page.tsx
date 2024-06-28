@@ -94,7 +94,7 @@ function Home() {
                           </button>
                           {showPopup && (
                             <motion.div
-                              className="absolute bottom-11 left-1/2 transform -translate-x-1/2 mb-2 w-32 p-2 text-center rounded-lg shadow-lg text-white bg-zinc-800 border-neutral-700"
+                              className="absolute bottom-11 left-1/1 transform -translate-x-1/2 mb-2 w-32 p-2 text-center rounded-lg shadow-lg text-white bg-zinc-800 border-neutral-700"
                               initial={{ opacity: 0, y: -10 }}
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
@@ -105,9 +105,9 @@ function Home() {
                           )}
                         </div>
                       </div>
-                      <div className="mt-6 p-4 border border-gray-300 rounded-lg bg-gray-800 text-gray-400 w-64 text-center">
-                        <p className="mt-0 text-sm font-semibold">
-                          &quot;Recently, I&apos;ve found myself drawn to you in ways I didn&apos;t expect. Being affectionate towards you has made me become a better person.&quot;
+                      <div className="mt-6 p-3 border border-gray-300 rounded-lg bg-gray-800 text-gray-400 w-64 text-center">
+                        <p className="mt-0 text-sm font-semibold" style={{fontSize:"14px"}}>
+                          &quot;I&apos;ve been surprised by how much I enjoy our time together, and I think I&apos;m starting to fall for you&quot;
                         </p>
                       </div>
                     </motion.div>
@@ -118,11 +118,11 @@ function Home() {
                 {!showCard && !audioPlayed && (
                   <motion.button
                     onClick={handlePlayAudio}
-                    className="mt-10 inline-flex items-center py-10 px-20 text-sm font-medium text-center rounded-lg focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+                    className="mt-10 inline-flex items-center py-7 px-10 text-sm font-medium text-center rounded-lg focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    style={{fontWeight:"600"}}
+                    style={{fontWeight:"800"}}
                     transition={{ duration: 0.1 }}
                   >
                     SHOW ME

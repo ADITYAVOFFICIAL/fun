@@ -46,6 +46,12 @@
   .bat-gif {
     scale: 0.5;
   }
+  .second-text{
+    font-size: 1rem;
+  }
+  .first-text {
+    font-size: 1rem;
+  }
 }
 @keyframes moveRight {
   from {
