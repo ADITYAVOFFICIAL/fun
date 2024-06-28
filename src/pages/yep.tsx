@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
 import './yep.css'; // Import the custom styles
