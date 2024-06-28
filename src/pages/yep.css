@@ -73,6 +73,7 @@ body {
     justify-content: center;
     align-items: start;
   }
+  
 @media (max-width: 576px) {
     .sadimg{
         margin-top: 0rem;
