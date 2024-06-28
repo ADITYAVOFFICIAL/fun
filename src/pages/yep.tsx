@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
 import './yep.css'; // Import the custom styles
@@ -44,7 +43,7 @@ const Yep = () => {
 
     // Simulate sending email to Formspree
     setTimeout(() => {
-      fetch('https://formspree.io/f/mwkdqzgr', {
+      fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL as string, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

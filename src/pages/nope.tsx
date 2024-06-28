@@ -24,7 +24,7 @@ const Nope = () => {
     formData.append('subject', 'MISSION FAILED');
 
     try {
-      const response = await fetch('https://formspree.io/f/mwkdqzgr', {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL as string, {
         method: 'POST',
         headers: {
           'Accept': 'application/json'
