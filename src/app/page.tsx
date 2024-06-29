@@ -9,8 +9,8 @@ export default function Login() {
   const [showFail, setShowFail] = useState(false);
   const [playCount, setPlayCount] = useState(0);
 
-  const predefinedEmail = 'test@example.com';
-  const predefinedPassword = 'password123';
+  const predefinedEmail = 'test@test.com';
+  const predefinedPassword = 'test123';
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
