@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "For You",
-  description: "Created by Aditya Verma on latest Next.js version",
+  title: "DateDash",
+  description: "Developed by Aditya Verma. A sleek, modern website to help you ask someone out on a date. Built using the latest technologies, including Next.js 14.2.4, Tailwind CSS, and Framer Motion, this project combines cutting-edge design and seamless animations to create an engaging user experience.",
 };
 
 export default function RootLayout({

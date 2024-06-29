@@ -1,4 +1,4 @@
-# Ask-her-out
+# DateDash
 Ask her out using this website. Built with latest NextJS version
 
 ## My attempts
