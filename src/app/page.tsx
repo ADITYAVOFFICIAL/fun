@@ -30,7 +30,7 @@ export default function Login() {
 
   useEffect(() => {
     if (playCount >= 1) {
-      setTimeout(() => setShowFail(false), 5000); // Hide the video after it has played once
+      setTimeout(() => setShowFail(false), 6000); // Hide the video after it has played once
     }
   }, [playCount]);
 
